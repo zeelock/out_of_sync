@@ -6,12 +6,9 @@ function setup() {
 
 for (i = 0 ; i < 250; i ++ ){
 b[i] = new Ball(random(width),random(height));
-
-
-
 }
- 
    background(0);
+  
 }
 function draw() {
 
@@ -24,14 +21,10 @@ background(0,10);
  b[i].update();
  b[i].shouw();
  b[i].end();
- 
- 
+   
   for( j = 0 ; j < b.length ; j++){
    if( i != j ){
      b[i].diss( b[i] , b[j]);
-     
-   
-    
    }
   }
  }
@@ -57,8 +50,6 @@ var Ball = function( x , y  ){
  
   };
  this.end = function(){
-   
-
  
  if (this.pos.x < 0 ){
    this.pos.x = width;
@@ -81,12 +72,9 @@ var Ball = function( x , y  ){
   }
   
  };
-
- 
-
-   this.diss = function(thiss , other){
   
-
+  this.diss = function(thiss , other){
+ 
   if( i != j ){
     diss = b[i].pos.dist(b[j].pos);
   }
