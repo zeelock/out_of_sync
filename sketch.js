@@ -4,7 +4,7 @@ function setup() {
 
   createCanvas (windowWidth,windowHeight);
 
-for (i = 0 ; i < 250; i ++ ){
+for (i = 0 ; i < 25; i ++ ){
 b[i] = new Ball(random(width),random(height));
 }
    background(0);
